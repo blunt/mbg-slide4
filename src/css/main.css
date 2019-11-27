@@ -13,7 +13,7 @@
 .toggleSlider {
   width: 100vw;
   max-width: 1440px;
-  background: #F8F1EB;
+  background: #fff;
   font-family: "Maax-Regular", "Helvetica Neue", Helvetica, Arial, sans-serif;
   overflow: hidden;
   position: relative;
@@ -21,10 +21,10 @@
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale; }
   .toggleSlider ::-moz-selection {
-    background: #CBDB2E;
+    background: #8B1841;
     color: #fff; }
   .toggleSlider ::selection {
-    background: #CBDB2E;
+    background: #8B1841;
     color: #fff; }
   .toggleSlider__padding {
     margin: 20px;
@@ -40,7 +40,7 @@
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
-    width: 400%;
+    width: 300%;
     -webkit-transition: -webkit-transform .6s ease-in-out;
     transition: -webkit-transform .6s ease-in-out;
     -o-transition: transform .6s ease-in-out;
@@ -50,18 +50,18 @@
       .toggleSlider__wrapper {
         width: auto; } }
     .toggleSlider__wrapper--two {
-      -webkit-transform: translateX(-25%);
-          -ms-transform: translateX(-25%);
-              transform: translateX(-25%); }
+      -webkit-transform: translateX(-33.3333%);
+          -ms-transform: translateX(-33.3333%);
+              transform: translateX(-33.3333%); }
       @media (min-width: 1024px) {
         .toggleSlider__wrapper--two {
           -webkit-transform: translateX(0);
               -ms-transform: translateX(0);
                   transform: translateX(0); } }
     .toggleSlider__wrapper--three {
-      -webkit-transform: translateX(-50%);
-          -ms-transform: translateX(-50%);
-              transform: translateX(-50%); }
+      -webkit-transform: translateX(-66.6666%);
+          -ms-transform: translateX(-66.6666%);
+              transform: translateX(-66.6666%); }
       @media (min-width: 1024px) {
         .toggleSlider__wrapper--three {
           -webkit-transform: translateX(0);
@@ -92,7 +92,7 @@
       width: 50px;
       height: 50px;
       border-radius: 100%;
-      background: #CBDB2E;
+      background: #8B1841;
       text-align: center;
       border: 0;
       -webkit-transition: all .1s ease-in;
@@ -100,8 +100,7 @@
       transition: all .1s ease-in; }
       .toggleSlider__navigation__button svg {
         width: 15px;
-        height: auto;
-        margin-left: 12px; }
+        height: auto; }
       .toggleSlider__navigation__button:focus {
         outline: none; }
       .toggleSlider__navigation__button--prev {
@@ -121,14 +120,14 @@
             -ms-transform: scale(0.9, 0.9);
                 transform: scale(0.9, 0.9); }
   .toggleSlider__section {
+    background: #FFFAF3;
     width: 100%;
     height: calc(100vh - 40px);
-    background: white;
     overflow-y: scroll;
     overflow-x: hidden; }
     @media (min-width: 1024px) {
       .toggleSlider__section {
-        width: calc(100% - 150px);
+        width: calc(100% - 100px);
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -182,7 +181,7 @@
     .toggleSlider__section__content p {
       font-size: 16px;
       line-height: 1.5rem;
-      margin-top: 0; }
+      margin: 0; }
       @media (min-width: 1200px) {
         .toggleSlider__section__content p {
           font-size: 18px; } }
@@ -195,7 +194,7 @@
       .toggleSlider__section__content a:visited {
         color: #222; }
       .toggleSlider__section__content a:hover {
-        background: #CBDB2E;
+        background: #8B1841;
         color: #fff; }
     @media (min-width: 1024px) {
       .toggleSlider__section__content--portrait {
@@ -221,14 +220,7 @@
         @media (min-width: 1024px) {
           .toggleSlider__section__content--portrait .toggleSlider__section__content__image img {
             display: block;
-            position: absolute;
-            top: 50%;
-            left: 50%;
-            min-height: 100%;
-            min-width: 100%;
-            -webkit-transform: translate(-50%, -50%);
-                -ms-transform: translate(-50%, -50%);
-                    transform: translate(-50%, -50%); } }
+            min-width: 100%; } }
     .toggleSlider__section__content--portrait .toggleSlider__section__content__text {
       padding: 30px 30px 90px 30px;
       display: -webkit-box;
@@ -244,20 +236,16 @@
           padding: 30px 30px 0 30px; } }
       .toggleSlider__section__content--portrait .toggleSlider__section__content__text h2 {
         font-family: Maax-Regular,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-size: 54px;
-        line-height: 90%;
-        font-weight: 400;
-        margin: 0; }
+        font-size: 36px;
+        line-height: 110%;
+        font-weight: 600;
+        margin: 0 0 16px 0; }
         .toggleSlider__section__content--portrait .toggleSlider__section__content__text h2.secondWord {
           margin-bottom: 20px; }
         @media (min-width: 1024px) {
           .toggleSlider__section__content--portrait .toggleSlider__section__content__text h2 {
-            font-size: 54px; } }
-        @media (min-width: 1200px) {
-          .toggleSlider__section__content--portrait .toggleSlider__section__content__text h2 {
-            font-size: 72px; }
-            .toggleSlider__section__content--portrait .toggleSlider__section__content__text h2.secondWord {
-              margin-bottom: 50px; } }
+            font-size: 48px;
+            margin: 0 0 30px 0; } }
         .toggleSlider__section__content--portrait .toggleSlider__section__content__text h2 div {
           width: 100%;
           display: -webkit-box;
@@ -281,15 +269,22 @@
         -webkit-box-align: start;
             -ms-flex-align: start;
                 align-items: start;
-        text-decoration: none; }
+        text-decoration: none;
+        font-weight: 400; }
         .toggleSlider__section__content--portrait .toggleSlider__section__content__sponsored__content span {
           text-decoration: underline; }
         .toggleSlider__section__content--portrait .toggleSlider__section__content__sponsored__content:hover {
-          background: #fff;
-          color: #222; }
+          color: #222;
+          background: #FFFAF3; }
           .toggleSlider__section__content--portrait .toggleSlider__section__content__sponsored__content:hover span {
-            background: #CBDB2E;
+            background: #8B1841;
             color: #fff; }
+        .toggleSlider__section__content--portrait .toggleSlider__section__content__sponsored__content--morning:hover span {
+          background: #CDA049;
+          color: #fff; }
+        .toggleSlider__section__content--portrait .toggleSlider__section__content__sponsored__content--afternoon:hover span {
+          background: #C38EAE;
+          color: #fff; }
       .toggleSlider__section__content--portrait .toggleSlider__section__content__sponsored img {
         width: 90px;
         margin-right: 15px;
@@ -364,14 +359,15 @@
     font-size: 24px;
     font-weight: 600;
     text-transform: uppercase;
-    background: #CBDB2E;
+    background: #8B1841;
     -webkit-transition: background-color .1s ease-in;
     -o-transition: background-color .1s ease-in;
-    transition: background-color .1s ease-in; }
+    transition: background-color .1s ease-in;
+    position: relative; }
     @media (min-width: 1024px) {
       .toggleSlider__section__title {
         padding: 16px;
-        width: 50px;
+        width: 52px;
         display: -webkit-box;
         display: -ms-flexbox;
         display: flex;
@@ -384,17 +380,24 @@
                 flex-direction: column; }
         .toggleSlider__section__title:hover {
           cursor: pointer;
-          background: #bdcc23; } }
+          background: #751437; }
+        .toggleSlider__section__title span {
+          -webkit-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+              -ms-transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+                  transform: translateX(-50%) translateY(-50%) rotate(-90deg);
+          position: absolute;
+          left: 50%;
+          top: 50%; } }
     .toggleSlider__section__title--morning {
-      background: #FFD255; }
+      background: #CDA049; }
       @media (min-width: 1024px) {
         .toggleSlider__section__title--morning:hover {
-          background: #ffcb3c; } }
+          background: #c69536; } }
     .toggleSlider__section__title--afternoon {
-      background: #9FCCDF; }
+      background: #C38EAE; }
       @media (min-width: 1024px) {
         .toggleSlider__section__title--afternoon:hover {
-          background: #8cc2d9; } }
+          background: #ba7da2; } }
     .toggleSlider__section__title--evening {
       background: #005676; }
       @media (min-width: 1024px) {

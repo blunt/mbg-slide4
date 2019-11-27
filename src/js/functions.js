@@ -16,6 +16,7 @@ next.addEventListener("click", function (event) {
             document.querySelectorAll(".toggleSlider__section--morning")[0].classList.add("toggleSlider__section--animated");
             break;
         case cls.contains('toggleSlider__wrapper--two'):
+            this.classList.add('toggleSlider__navigation__button--hidden');
             wrapper.classList.remove('toggleSlider__wrapper--two');
             wrapper.classList.add('toggleSlider__wrapper--three');
             for (const title of titles) {
@@ -24,7 +25,6 @@ next.addEventListener("click", function (event) {
             document.querySelectorAll(".toggleSlider__section--afternoon")[0].classList.add("toggleSlider__section--animated");
             break;
         case cls.contains('toggleSlider__wrapper--three'):
-            this.classList.add('toggleSlider__navigation__button--hidden');
             wrapper.classList.remove('toggleSlider__wrapper--three');
             wrapper.classList.add('toggleSlider__wrapper--four');
             for (const title of titles) {
@@ -40,7 +40,6 @@ prev.addEventListener("click", function (event) {
     const cls = wrapper.classList;
     switch (true) {
         case cls.contains('toggleSlider__wrapper--four'):
-            this.nextElementSibling.classList.remove('toggleSlider__navigation__button--hidden');
             wrapper.classList.remove('toggleSlider__wrapper--four');
             wrapper.classList.add('toggleSlider__wrapper--three');
             for (const title of titles) {
@@ -49,6 +48,7 @@ prev.addEventListener("click", function (event) {
             document.querySelectorAll(".toggleSlider__section--afternoon")[0].classList.add("toggleSlider__section--open");
             break;
         case cls.contains('toggleSlider__wrapper--three'):
+            this.nextElementSibling.classList.remove('toggleSlider__navigation__button--hidden');
             wrapper.classList.remove('toggleSlider__wrapper--three');
             wrapper.classList.add('toggleSlider__wrapper--two');
             for (const title of titles) {
